@@ -7,6 +7,5 @@ func GCHandlerFunc(Mongostring, dbname, colname string) []byte {
 	datageo := GetAllGeoData(koneksi, colname)
 
 	jsonhei, _ := json.Marshal(datageo)
-
 	return jsonhei
 }
