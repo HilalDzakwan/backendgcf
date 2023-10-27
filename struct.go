@@ -1,4 +1,4 @@
-package backendgcf
+package gcfbackend
 
 type GeometryPolygon struct {
 	Coordinates [][][]float64 `json:"coordinates" bson:"coordinates"`
@@ -39,4 +39,16 @@ type GeoJson struct {
 
 type Properties struct {
 	Name string `json:"name" bson:"name"`
+}
+
+type LonLatProperties struct {
+	Type        string    `json:"type" bson:"type"`
+	Name        string    `json:"name" bson:"name"`
+	Volume      string    `json:"volume" bson:"volume"`
+	Coordinates []float64 `json:"coordinates" bson:"coordinates"`
+}
+
+type Credents struct {
+	Status  string `json:"status" bson:"status"`
+	Message string `json:"message" bson:"message"`
 }
