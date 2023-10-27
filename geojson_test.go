@@ -1,4 +1,4 @@
-package gcfbackend
+package backendgcf
 
 import (
 	"fmt"
